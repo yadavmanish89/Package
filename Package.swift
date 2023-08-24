@@ -24,7 +24,7 @@ let package = Package(
         .target(
             name: "NewPackage",
             dependencies: [],
-            path: "Sources/NewPackage"),
+            path: "Package/sSources/NewPackage"),
         .testTarget(
             name: "SuperPackageTests",
             dependencies: ["SuperPackage"]),
