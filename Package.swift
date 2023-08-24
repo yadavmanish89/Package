@@ -21,6 +21,10 @@ let package = Package(
         .target(
             name: "SuperPackage",
             dependencies: []),
+        .target(
+            name: "NewPackage",
+            dependencies: [],
+            path: "Sources/NewPackage"),
         .testTarget(
             name: "SuperPackageTests",
             dependencies: ["SuperPackage"]),
