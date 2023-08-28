@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct FileA {
+public struct AFile {
     public private(set) var text = "Hello, AFile!"
 
     public init() {
