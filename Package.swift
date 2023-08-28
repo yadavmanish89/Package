@@ -10,6 +10,9 @@ let package = Package(
         .library(
             name: "SuperPackageDemo",
             targets: ["SuperPackage"]),
+        .library(
+            name: "PackageA",
+            targets: ["PackageA"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,5 +27,8 @@ let package = Package(
         .testTarget(
             name: "SuperPackageTests",
             dependencies: ["SuperPackage"]),
+        .target(name: "PackageA",
+               dependencies: [],
+               path: "PackageA/Sources/PackageA")
     ]
 )
