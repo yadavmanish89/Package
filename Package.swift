@@ -12,7 +12,10 @@ let package = Package(
             targets: ["PackageA"]),
         .library(
             name: "APackage",
-            targets: ["APackage"])
+            targets: ["APackage"]),
+        .library(
+            name: "BPackage",
+            targets: ["BPackage"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -26,6 +29,9 @@ let package = Package(
                path: "PackageA/Sources/PackageA"),
         .target(name: "APackage",
                dependencies: [],
-               path: "Sources/APackage")
+               path: "Sources/APackage"),
+        .target(name: "BPackage",
+               dependencies: [],
+               path: "Sources/BPackage")
     ]
 )
