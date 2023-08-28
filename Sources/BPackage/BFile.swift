@@ -8,7 +8,7 @@
 import Foundation
 
 public struct BFile {
-    public private(set) var text = "Hello, BFile!"
+    private(set) var text = "Hello, BFile!"
 
     public init() {
     }
